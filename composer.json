@@ -1,0 +1,18 @@
+{
+    "name": "danimatuko/coinboard",
+    "description": "PHP app for tracking expenses",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Dani Matuko",
+            "email": "danimatuko@outlook.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/Framework",
+            "App\\": "src/App"
+        }
+    }
+}

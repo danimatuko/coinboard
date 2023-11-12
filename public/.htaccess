@@ -1,0 +1,10 @@
+# Enable the rewrite engine to perform URL rewriting
+RewriteEngine On
+
+# Check if the requested filename is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# Check if the requested filename is not a file
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# If both conditions above are met, rewrite the URL to direct all requests to index.php
+RewriteRule ^ /index.php [L]

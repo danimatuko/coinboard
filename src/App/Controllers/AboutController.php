@@ -8,15 +8,15 @@ use Framework\TemplateEngine;
 use App\Config\Paths;
 
 /**
- * Class HomeController
- * Manages home-related functionalities and views.
+ * Class AboutController
+ * Handles functionalities related to the about page.
  */
-class HomeController
+class AboutController
 {
     private TemplateEngine $view;
 
     /**
-     * HomeController constructor.
+     * AboutController constructor.
      * Initializes the TemplateEngine for rendering views.
      */
     public function __construct()
@@ -25,10 +25,10 @@ class HomeController
     }
 
     /**
-     * Renders the home page view.
+     * Renders the about page view.
      */
-    public function home()
+    public function about()
     {
-        $this->view->render("index.php", ["title" => 'Home page']);
+        $this->view->render("about.php", ["title" => 'About page']);
     }
 }
